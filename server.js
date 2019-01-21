@@ -43,8 +43,8 @@ async function getArtifactInfo(callback) {
 }
 
 
-//var interval = setInterval(getArtifactInfo, 5000);
-getArtifactInfo(getCardTotal);
+var interval = setInterval(getArtifactInfo, 5000);
+//getArtifactInfo(getCardTotal);
 function formatCardInfo(cardInfo) {
 	var dict = {};
 	for (var i = 0; i < cardInfo.length; i++) {
